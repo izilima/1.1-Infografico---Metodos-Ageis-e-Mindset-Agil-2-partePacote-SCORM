@@ -1,0 +1,478 @@
+.fundo-quebra-cabeca{
+    background-color:#5a6369;
+}
+.principal-quebra-cabeca{
+    background-color: #eff3fe;
+    position: relative;
+    padding: 5%;
+    width: 85%;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    width: 85%;
+    margin: 0 auto;
+}
+.tudo-quebra-cabeca{
+    background-color: #eff3fe;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 23%;
+}
+.titulo-principal-quebra-cabeca{
+    padding-top: 3%;
+    font-family: Heebo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform:translateX(-40%);
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    animation-name: anima-titulo-principal;
+    animation-duration: 2s;
+    }
+    @keyframes anima-titulo-principal{
+        0% {
+            opacity: 0;
+          
+
+           
+        }
+        100%{
+            opacity: 1;
+     
+
+        }
+}
+.container-subtitulos{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    display: inline;
+    text-align: center;
+
+    }
+    
+    @keyframes subtitulo-esq{
+        0% {
+            opacity: 0;      
+        }
+        100%{
+            opacity: 1;  
+        }
+    
+}
+.subtitulo-esquerda-quebra-cabeca{
+    flex-direction: row;
+    display: inline-block;
+    font-family: Heebo;
+    color: #4a555e;
+    font-size: 1.7rem;
+    position: relative;
+    align-items: right;
+    margin-right: 5%;
+    text-align: center;
+    opacity: 0;
+    animation-name: subtitulo-esq;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.subtitulo-direita-quebra-cabeca{
+    flex-direction: row;
+    display: inline;
+    font-family: Heebo;
+    color: #4a555e;
+    font-size: 1.7rem;
+    position: relative;
+    left: 50%;
+    opacity: 0;
+    animation-name: subtitulo-dir;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes subtitulo-dir{
+    0% {
+        opacity: 0; 
+  
+    }
+    100%{
+        opacity: 1;
+
+    }
+
+}
+.container-1-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*  background-color: #2f5cd5; */
+    border: solid #ffffff 2px;
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-size: 1.2rem;
+    font-weight: regular;
+    animation-name: esquerda;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    color: #4a555e;
+}
+@keyframes esquerda{
+    0% {
+        transform: translateX(0%) ;
+        border: solid #ffffff 2px;      
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    100%{
+        transform: translateX(39%) ;
+        border: solid #ffffff 0px;
+        box-shadow: none;
+    }
+}
+.container-circulo{
+    width: 40%;
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    left: 35%;
+}
+.a{
+    width: 60px;
+    position: relative;
+    left: 8%;
+    
+}
+
+.circulo-mais{
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    left: 50%;
+    position: relative;
+    opacity: 0;
+    animation-name: elemento;
+    animation-delay: 1s;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+}
+@keyframes elemento{
+    0% {
+        opacity: 0;
+
+       
+    }
+    50%{
+        opacity: 1;
+        transform: rotateZ(0deg);
+      
+    }
+    75%{
+      
+        transform: rotateZ(360deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotateZ(0deg);
+        opacity: 0;
+    }
+
+}
+.container-2-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* background-color: #153a90; */
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; 
+    font-size: 1.2rem;
+    font-weight: regular;   
+    animation-name: direita;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+}
+
+@keyframes direita{
+        0% {
+            transform: translateX(0%) ;
+            border: solid #ffffff 2px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+           
+        }
+        100%{
+            transform: translateX(-39%) ;
+            border: solid #ffffff 0px;
+            box-shadow: none;  
+           }
+    }
+.container-3-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* background-color: #2f5cd5; */
+    border: solid #ffffff 2px;
+    color: white;
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-size: 1.2rem;
+    font-weight: regular;
+    animation-name: esquerda;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    color: #4a555e;
+}
+.container-4-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*    background-color: #153a90; */
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    left: 50%;
+    font-size: 1.2rem;
+    font-weight: regular;
+    animation-name: direita;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    color: #4a555e;
+}
+.container-5-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*    background-color: #153a90; */
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: regular;
+    animation-name: esquerda;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    color: #4a555e;
+}
+.container-6-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*    background-color: #153a90; */
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: regular;
+    left: 50%;
+    animation-name: direita;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    color: #4a555e;
+}
+.container-7-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: regular;
+    animation-name: esquerda;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    color: #4a555e;
+}
+.container-8-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*    background-color: #153a90; */
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: regular;
+    left: 50%;
+    animation-name: direita;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    color: #4a555e;
+}
+.container-9-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*    background-color: #153a90; */
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: regular;
+    animation-name: esquerda;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #4a555e;
+}
+.container-10-peca{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*    background-color: #153a90; */
+    display: inline-block;
+    border-radius: 1.2rem;
+    padding: 2%;
+    border: solid #ffffff 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: regular;
+    left: 50%;
+    animation-name: direita;
+    animation-delay: 5s;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #4a555e;
+}
+/*.texto-1-peca{
+    color: #2f5cd5;
+    font-size: 1.2rem;
+    font-weight: regular;
+    opacity: 1;
+}
+.texto-2-peca{
+    color:#2f5cd5;
+    font-size: 1.2rem;
+    font-weight: regular;
+
+} */
+/* animações */
+.uniao-1{
+    border: solid #5984e9  2px;
+    position: relative;
+    left: 15.6%;
+    width: 60.5%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 3%;
+    padding-left: 3%;
+    top: 22.5%;
+    opacity: 0;
+    animation-name: grades;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+/* 
+.uniao-2{
+    border: solid #5984e9 2px;
+    position: absolute;
+    left: 15.6%;
+    width: 60.5%;
+    height:8%;
+    border-radius: 1rem;
+    padding: 3%;
+    padding-left: 3%;
+    top: 35.5%;
+    opacity: 0;
+    animation-name: grades;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+.uniao-3{
+    border: solid #5984e9 2px;
+    position: absolute;
+    left: 15.6%;
+    width: 60.5%;
+    height: 11%;
+    border-radius: 1rem;
+    padding: 3%;
+    padding-left: 3%;
+    top: 51%;
+    opacity: 0;
+    animation-name: grades;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+.uniao-4{
+    border: solid #5984e9 2px;
+    position: absolute;
+    left: 15.6%;
+    width: 60.5%;
+    height: 5%;
+    border-radius: 1rem;
+    padding: 3%;
+    padding-left: 3%;
+    top: 70%;
+    opacity: 0;
+    animation-name: grades;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+.uniao-5{
+    border: solid #5984e9 2px;
+    position: absolute;
+    left: 15.6%;
+    width: 59%;
+    height: 8%;
+    border-radius: 1rem;
+    padding: 3%;
+    padding-left: 3%;
+    padding-right: 4.5%;
+    top:83%;
+    opacity: 0;
+    animation-name: grades;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}*/
+@keyframes grades{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
