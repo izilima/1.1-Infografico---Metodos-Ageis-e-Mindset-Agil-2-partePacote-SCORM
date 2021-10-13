@@ -1,0 +1,1 @@
+# 1.1-Infografico---Metodos-Ageis-e-Mindset-Agil-2-partePacote-SCORM
